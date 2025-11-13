@@ -17,7 +17,7 @@ def extract_schema(db_url):
         schema[table_name] = [col['name'] for col in columns]
     return json.dumps(schema)
 
-#Step2: Text to SQL (GROQ LLM)
+#Step2: Text to SQL (GROQ -llama)
 
 import os
 from dotenv import load_dotenv
